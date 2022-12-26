@@ -1,21 +1,43 @@
 body {
+    padding: 0;
+    margin: 0;
     background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 100vh;
+    align-items: center;
+    font-family: Verdana;
 }
 
 h1 {
     color: rgb(200, 209, 50);
+    font-size: 2rem;;
+}
+
+.emoji-div {
+    text-align: center;
 }
 
 p {
     color: white;
+    font-weight: 400;
 }
 
 button {
     font-size: 3rem;
     background: rgba(255, 255, 255, 0.2);
     border: none;
+    border-radius: 0.5rem;
     color:aquamarine;
     cursor: pointer;
     padding: 10px;
+    filter: grayscale();
+    transition: filter .2s ease-in-out;
 }
+
+button:hover {
+    filter: grayscale(0);
+
+}
+
