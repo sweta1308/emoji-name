@@ -8,19 +8,14 @@ async function emojiFetch() {
 
     data = await response.json()
 
-
     for (i=0; i<1000; i++) {
         emoji.push({
           emojiChar: data[i].character,
           emojiCode: data[i].unicodeName
         })
     }
-
 }
-
 emojiFetch();
-
-
 
 btnEl.addEventListener("click", () => {
     const randomEl = Math.floor(Math.random() * emoji.length)
